@@ -1,4 +1,10 @@
 {%extends "html/layout.html"%}
 {%block body%}
-<h1>hi</h1>
+<h1>Vendor Detail</h1>
+<form action="{%url 'main:index'%}" method="POST">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit" name="submit">Submit</button>
+</form>
+
 {%endblock%}

@@ -47,7 +47,7 @@ class Order(models.Model):
     customer=models.ForeignKey(Customer, on_delete=models.CASCADE)
     
     def __str__(self):
-        return f"Order Date:{self.order_date}, Pricing: {self.pricing}, Deliver Date: {self.deliver_dat}, Ordered by:{self.customer}"
+        return f"Order Date:{self.order_date}, Pricing: {self.pricing}, Deliver Date: {self.deliver_date}, Ordered by:{self.customer}"
     
 class OrderDetail(models.Model):
     product=models.ForeignKey(Product,on_delete=models.CASCADE)

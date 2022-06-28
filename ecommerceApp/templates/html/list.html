@@ -1,0 +1,35 @@
+{%extends 'html/layout.html'%}
+{%block body%}
+
+<h1>Vendor List</h1>
+    {%for i in vendor_list%}
+        <ul>{{i}}</ul>
+    {%endfor%}
+
+<h1>Customer List</h1>
+    {%for i in customer_list%}
+        <ul>{{i}}</ul>
+    {%endfor%}
+
+<h1>Product List</h1>
+    {%for i in product_list%}
+        <ul>{{i}}</ul>
+    {%endfor%}
+
+<h1>Shop List</h1>
+    {%for i in shop_list%}
+    <ul>{{i}}</ul>
+    {%endfor%}
+
+<h1>Order List</h1>
+    {%for i in order_list%}
+    <ul>{{i}}</ul>
+    {%endfor%}
+
+<h1>Order Detail List</h1>
+    {%for i in orderDetail_list%}
+    <ul>{{i}}</ul>
+    {%endfor%}
+
+
+{%endblock%}
